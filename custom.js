@@ -1,22 +1,19 @@
 //All Input Selectors
-let incomeInput = document.querySelector('.incomeInput');
-let foodInput = document.querySelector('.foodInput');
-let rentInput = document.querySelector('.rentInput');
-let clothesInput = document.querySelector('.clothesInput');
-let savingPersentInput = document.querySelector('.savingPersentInput');
+const incomeInput = document.querySelector('.incomeInput');
+const foodInput = document.querySelector('.foodInput');
+const rentInput = document.querySelector('.rentInput');
+const clothesInput = document.querySelector('.clothesInput');
+const savingPersentInput = document.querySelector('.savingPersentInput');
 
 //All Calculated output Places Selector 
-let totalExpenseAmount = document.querySelector('.totalExpenseAmount');
-let currentBalance = document.querySelector('.currentBalance');
-let savingAmount = document.querySelector('.saving-amount');
-let remainingAmount = document.querySelector('.remaining-amount');
+const totalExpenseAmount = document.querySelector('.totalExpenseAmount');
+const currentBalance = document.querySelector('.currentBalance');
+const savingAmount = document.querySelector('.saving-amount');
+const remainingAmount = document.querySelector('.remaining-amount');
 
 // Button Selectors
 const calculateBtn = document.querySelector('.calculate-btn');
 const saveBtn = document.querySelector('.save-btn');
-
-//Error Selector
-let smallTag = document.querySelector('small');
 
 // Global variables for store income taka, tatal expenses taka and current balance 
 let incomeTaka;
@@ -93,7 +90,7 @@ calculateBtn.addEventListener('click', function () {
         savingPersentInput.value = '';
 
         // if expenses taka greater then income taka
-        let expensesGreater = document.querySelector('.expensesGreater')
+        const expensesGreater = document.querySelector('.expensesGreater')
         if (totalExpenseTk > incomeTk) {
             // Error Message Show
             expensesGreater.style.display = 'block';
