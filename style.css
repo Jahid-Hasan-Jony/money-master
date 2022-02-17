@@ -11,7 +11,10 @@ table {
 .saveInputTableData{width: 100px;}
 
 /* td font weight */
-table tr td{font-weight: 500;}
+table tr td{
+  max-width: 190px;
+  font-weight: 500;
+}
 
 /* hide error message  */
 small{display: none;}
