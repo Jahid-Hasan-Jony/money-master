@@ -1,1 +1,18 @@
-body{background-color: aqua;}
+/* card background color style */
+.card{background-color: #F8F8F8;}
+
+/* table spacing styles */
+table {
+    border-collapse:separate; 
+    border-spacing: 0 1em;
+  }
+
+/* saving input width size style */
+.saveInputTableData{width: 100px;}
+
+/* td font weight */
+table tr td{font-weight: 500;}
+
+/* hide error message  */
+small{display: none;}
+.trHide{display: none;}

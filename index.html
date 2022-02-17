@@ -17,7 +17,131 @@
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+    <main>
+        <!-- wrapper section start -->
+        <section class="wrapper container">
+            <!-- heading part start -->
+            <h1 class="text-center my-3 py-2 text-primary">Monthly Account</h1>
+            <!-- heading part End -->
+
+            <!-- row div start -->
+            <div class="row gx-5 my-2 align-items-center">
+                <!-- left or first column start -->
+                <div class="col-12 col-md-6">
+                    <!-- Large Display picture -->
+                    <img class="w-100" src="image/moneys.jpg" />
+                </div>
+                <!-- left or first column start -->
+
+                <!-- right or second column start -->
+                <div class="col-12 col-md-6 my-3">
+                    <!-- card div start -->
+                    <div class="card align-items-center">
+                        <!-- Expenses and current balance table -->
+                        <table class="text-center">
+                            <!-- income title row -->
+                            <tr>
+                                <th colspan="2">Income</th>
+                            </tr>
+                            <!-- income input row -->
+                            <tr>
+                                <td class="text-end pe-3">Income :</td>
+                                <td>
+                                    <!-- income input -->
+                                    <input class="form-control incomeInput" type="text" />
+                                    <!-- for invalid value  -->
+                                    <small class="text-danger">Fill in Bank</small>
+                                </td>
+                            </tr>
+                            <!-- Expenses title row -->
+                            <tr>
+                                <th colspan="2">Expenses</th>
+                            </tr>
+                            <!-- Expenses input row start -->
+                            <tr>
+                                <td class="text-end pe-3">Food :</td>
+                                <td>
+                                    <input class="form-control foodInput" type="text" />
+                                    <small class="text-danger">Fill in Bank</small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-end pe-3">Rent :</td>
+                                <td>
+                                    <input class="form-control rentInput" type="text" />
+                                    <small class="text-danger">Fill in Bank</small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-end pe-3">Clothes :</td>
+                                <td>
+                                    <input class="form-control clothesInput" type="text" />
+                                    <small class="text-danger">Fill in Bank</small>
+                                </td>
+                            </tr>
+                            <!-- Expenses input row End -->
+
+                            <!-- Expenses calculate button row start -->
+                            <tr>
+                                <td colspan="2">
+                                    <button class="btn btn-primary btn-lg calculate-btn">Calculate</button>
+                                </td>
+                            </tr>
+                            <!-- Expenses calculate button row end -->
+
+                            <!-- Total Expenses calculated output row -->
+                            <tr>
+                                <th colspan="2">Total Expenses : <span class="totalExpenseAmount"></span></th>
+                            </tr>
+                            <!-- Current Balance calculated output row -->
+                            <tr>
+                                <th colspan="2">Balance : <span class="currentBalance"></span>
+                                    <small class="text-danger expensesGreater">Balance over</small>
+                                </th>
+                            </tr>
+                        </table>
+                        <!-- Expenses and current balance table end -->
+
+                        <!-- Saving and Remaining balance table Start -->
+                        <table class="pb-3 text-center">
+                            <!-- Saving Persentage Input row Start -->
+                            <tr>
+                                <td class="pe-3">Save :</td>
+                                <td class="saveInputTableData">
+                                    <!-- saving input value -->
+                                    <input class="w-100 form-control savingPersentInput" type="text" />
+                                </td>
+                                <td class="text-end px-2">%</td>
+                                <td class="saveInputTableData">
+                                    <!-- saving button -->
+                                    <button class="btn btn-primary w-100 save-btn">save</button>
+                                </td>
+                            </tr>
+                            <!-- Saving Persentage Input row End -->
+                            <!-- Saving and Remaining calculated output -->
+                            <tr>
+                                <!-- saving ammount output -->
+                                <th colspan="4">
+                                    <p>Saving Amount: <span class="saving-amount"></span></p>
+                                    <small class="text-danger savingError">Sorry u can't saving</small>
+                                </th>
+
+                            </tr>
+                            <!-- Remaining Row output -->
+                            <tr>
+                                <th colspan="4">Remaining Balance: <span class="remaining-amount"></span></th>
+                            </tr>
+                        </table>
+                        <!-- Saving and Remaining balance table end -->
+                    </div>
+                    <!-- card div End -->
+                </div>
+                <!-- right or second column End -->
+            </div>
+            <!-- row div End -->
+        </section>
+        <!-- wrapper section End -->
+    </main>
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
